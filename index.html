@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/7fc5a0630a.js" crossorigin="anonymous"></script>
+    <title>Delivery Pizzas</title>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#">
+            <img src="img/Logo.png" alt="logo">
+        </a>
+        <nav class="topnav" id="myTopnav">
+            <a class="a" href="#">Home</a>
+            <a class="a" href="#">Ranking</a>
+            <a class="a" href="#">Promoción</a>
+            <a class="a" href="#">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                x.className += " responsive";
+                } else {
+                x.className = "topnav";
+                }
+            }
+        </script>
+    </header>
+    <main>
+        <article class="article">
+            <section class="seccionUno">
+                <h2 class="subUno" >Envio gratis <span>comprando</span> 2 pizzas</h2>
+                <img  class="imagenUno" src="img/delivery.jpg" alt="">
+            </section>
+            <section class="seccionDos">
+                <h2 class="subDos">Podio de pizzas</h2>
+                <div>
+                    <ol class="ol">
+                        <h3 class="tituloLista">Pizzas top 5</h3>
+                        <li>Muzarella</li>
+                        <li>Hawaiana</li>
+                        <li>Muzarella J&Morron</li>
+                        <li>Fugazeta</li>
+                        <li>Calabresa</li>
+                    </ol>
+                    <div class="imagenDos">
+                        <img src="img/PizzaFalling.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <nav class="bottomNav">
+            <a class="aBottom" href="#">Home</a>
+            <a class="aBottom" href="#">Contacto</a>
+            <a class="aBottom" href="#">Ranking</a>
+            <a class="aBottom" href="#">Promoción</a>
+        </nav>
+        <div class="redes">
+            <a href="https://www.linkedin.com/feed/" class="link mx-2 fa-circle text-reset" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/MatiasCastellon1214?tab=repositories" class="github mx-2 fa-circle text-reset" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <a class="logoDos" href="#">
+            <img src="img/Logo.png" alt="logo2">
+        </a>
+    </footer>    
+</body>
+</html>
